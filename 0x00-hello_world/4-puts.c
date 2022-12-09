@@ -2,7 +2,9 @@
 /**
  * main - entry point
  *
- * return 0
+ * Description: C program that print 
+ *
+ * Return: 0
  */
 int main(void)
 {
