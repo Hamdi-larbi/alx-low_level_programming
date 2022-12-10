@@ -19,9 +19,9 @@ int main(void)
 		{
 			for (k = j + 1; k < 10; k++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
 				sum = i * 100 + j * 10 + k;
 				if (sum < 789)
 				{
