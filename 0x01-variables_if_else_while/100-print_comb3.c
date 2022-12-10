@@ -16,8 +16,9 @@ int main(void)
 	{
 		for (j = i + 1; j < 10; j++)
 		{
+			putchar(i + '0');
+			putchar(j + '0');
 			sum = i * 10 + j;
-			putchar(sum + '0');
 			if (sum < 90)
 			{
 				putchar(',');
@@ -25,6 +26,7 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
