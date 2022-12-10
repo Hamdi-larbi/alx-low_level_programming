@@ -19,7 +19,7 @@ int main(void)
 			putchar(i + '0');
 			putchar(j + '0');
 			sum = i * 10 + j;
-			if (sum < 90)
+			if (sum < 89)
 			{
 				putchar(',');
 				putchar(' ');
