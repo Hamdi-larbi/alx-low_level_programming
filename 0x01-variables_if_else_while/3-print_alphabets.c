@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point
@@ -9,8 +8,8 @@
 
 int main(void)
 {
-	int lower;
-	int upper;
+	char lower;
+	char upper;
 
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
