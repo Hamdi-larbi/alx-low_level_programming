@@ -29,8 +29,8 @@ int main(void)
 						sum = i * 1000 + j * 100 + k * 10 + l;
 						if (sum < 9899)
 						{
-						putchar(',');
-						putchar(' ');
+							putchar(',');
+							putchar(' ');
 						}
 					}
 				}
