@@ -9,15 +9,16 @@
 
 int main(void)
 {
-	int ch;
+	int lower;
+	int upper;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
-		putchar(ch);
+		putchar(lower);
 	}
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	for (upper = 'A'; upper <= 'Z'; upper++)
 	{
-		putchar(ch);
+		putchar(upper);
 	}									}
 	putchar('\n');
 
