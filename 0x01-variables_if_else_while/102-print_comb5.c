@@ -17,18 +17,21 @@ int main(void)
 		{
 			for (k = 0; k < 10; k++)
 			{
-				for (l = j + 1; l < 10; l++)
+				for (l = 0; l < 10; l++)
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(l + '0');
-					sum = i * 100 + j * 100 + k * 10 + l;
-					if (sum < 9899)
+					if (i * 10 + j < k * 10 + l)
 					{
+						putchar(i + '0');
+						putchar(j + '0');
+						putchar(' ');
+						putchar(k + '0');
+						putchar(l + '0');
+						sum = i * 1000 + j * 100 + k * 10 + l;
+						if (sum < 9899)
+						{
 						putchar(',');
 						putchar(' ');
+						}
 					}
 				}
 			}
