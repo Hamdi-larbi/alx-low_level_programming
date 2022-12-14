@@ -13,12 +13,13 @@ void times_table(void)
 		for (mult = 0; mult <= 9; mult++)
 		{
 			prod = num * mult;
+			putchar(prod + '0');
 			if (mult < 9)
 			{
-				_putchar(',');
-				_putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
