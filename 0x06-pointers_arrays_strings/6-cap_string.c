@@ -13,20 +13,20 @@ char *cap_string(char *s)
 
 	while (*(s + i) != '\0')
 	{
-		if (i == 0)
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			if (i == 0)
 			{
 				*(s + i) = *(s + i) - 32;
 			}
-		}
-		else
-		{
-			for (j = 0; c[j]; j++)
+			else
 			{
-				if (*(s + i - 1) == c[j] && *(s + i) >= 'a' && *(s + i) <= 'j')
+				for (j = 0; c[j]; j++)
 				{
-					*(s + i) = *(s + i) - 32;
+					if (*(s + i - 1) == c[j])
+					{
+						*(s + i) = *(s + i) - 32;
+					}
 				}
 			}
 		}
