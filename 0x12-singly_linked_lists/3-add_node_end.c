@@ -5,7 +5,6 @@
 
 
 /**
- *
  * _strlen - finds the length of a string
  * @str: string to find the length of
  * Return: length of string
@@ -21,7 +20,6 @@ unsigned int _strlen(char *str)
 }
 
 /**
- *
  * add_node_end - adds a new node to the end of linked list
  * @head: double pointer to a linked list
  * @str: string to add to the new node
